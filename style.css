@@ -101,7 +101,7 @@ main {
 
 
 
-/* greeting-atyle 
+/* greeting-atyle */
 .greeting {
     margin: 60px 80px;
 }
@@ -138,7 +138,7 @@ main {
     margin-bottom: 40px;
 }
 
-/* wellcome style  
+/* wellcome style */ 
 .wellcome {
     margin: 120px 0px;
 }
@@ -154,7 +154,7 @@ main {
 .wellcome-item {
     display: flex;
     gap: 50px;
-    /* justify-content: space-between; 
+    /* justify-content: space-between; */
     padding: 100px;
 
 }
@@ -163,8 +163,7 @@ main {
     color: #FFF;
     font-family: Merriweather;
     font-size: 30px;
-    font-weight: 900;
-    /* line-height: 88px; 
+    font-weight: 900; 
     margin-bottom: 20px;
 }
 
@@ -187,7 +186,7 @@ main {
     border: none;
 }
 
-/* schedule area style  
+/* schedule area style */ 
 .schedule-container {
     background-image: linear-gradient(to bottom right, #FFEAEA, rgba(255, 0, 0, 0));
     border-radius: 16px;
@@ -195,8 +194,7 @@ main {
 }
 
 .schedule-top {
-    text-align: center;
-    /* padding: 70px 100px 0px; 
+    text-align: center; 
     font-size: 32px;
     font-family: Inter;
     font-weight: 600;
@@ -212,7 +210,6 @@ main {
 }
 
 .schedule-bottom>.btn-primary {
-    /* padding: 13px 25px; 
     background-color: red;
     margin-top: 30px;
     border-radius: 8px;
@@ -232,7 +229,7 @@ main {
     margin-bottom: 100px;
 }
 
-/* coming-soon-style 
+/* coming-soon-style */
 .coming-soon-container {
     display: flex;
     gap: 20px;
@@ -292,7 +289,7 @@ main {
     margin-top: 20px;
 }
 
-/* holiday style  
+/* holiday style */ 
 .holiday-subtitle {
     color: #070211;
     font-family: Inter;
@@ -328,7 +325,7 @@ main {
 .holiday-images {
     display: flex;
     justify-content: center;
-    /* max-width: 300px; 
+    /* max-width: 300px; */
     margin-top: 30px;
     background-image: url('resources/ractengle-2.png');
     background-repeat: no-repeat;
@@ -356,7 +353,7 @@ main {
 
 }
 
-/* portfolio style  
+/* portfolio style  */
 .portfolio-container {
     margin-bottom: 100px;
 }
@@ -385,7 +382,7 @@ main {
     font-weight: 400;
     line-height: 32px;
     max-width: 800px;
-    /* 160% 
+    /* 160% */
 }
 
 .portfolio-item {
@@ -400,7 +397,7 @@ main {
     border-radius: 5px;
 }
 
-/* subscriber style  
+/* subscriber style */ 
 .subscribe-container{
     margin-bottom: 100px;
 }
@@ -461,7 +458,7 @@ input[type="email"] {
 }
 
 
-/* footer style  
+/* footer style */ 
 .footer-container {
     background-color: #070211;
 }
