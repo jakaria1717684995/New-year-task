@@ -1,0 +1,524 @@
+body {
+    font-family: 'Inter', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* banner style */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.banner-item {
+    background-image: url('resources/Banner Image.png');
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 16px;
+    text-align: center;
+    color: #FFF;
+    padding: 100px 20px; 
+    box-sizing: border-box;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    position: relative; 
+}
+
+.banner-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 16px; 
+    z-index: 0; 
+}
+
+.banner-greeting,
+.banner-title {
+    position: relative; 
+    z-index: 1; 
+}
+
+.banner-greeting {
+    font-family: 'Merriweather', serif; 
+    font-size: 32px;
+    margin: 0;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-title {
+    font-family: 'Merriweather', serif;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+    margin: 0;
+    padding-bottom: 100px;
+    padding-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .banner-greeting {
+        font-size: 24px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    .banner-title {
+        font-size: 48px;
+        line-height: 60px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-greeting {
+        font-size: 18px;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+
+    .banner-title {
+        font-size: 36px;
+        line-height: 45px;
+        padding-bottom: 30px;
+    }
+}
+
+
+
+/* greeting-atyle 
+.greeting {
+    margin: 60px 80px;
+}
+
+.greeting img {
+    width: 100%;
+    justify-content: center;
+}
+
+.greeting-title {
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 88px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.greeting-subtitle {
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.greeting-description {
+    color: #070211;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* wellcome style  
+.wellcome {
+    margin: 120px 0px;
+}
+
+.wellcome-container {
+
+    background-image: url('resources/Vectorrr.png');
+    background-size: cover;
+    border-radius: 16px;
+
+}
+
+.wellcome-item {
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-between; 
+    padding: 100px;
+
+}
+
+.wellcome-title {
+    color: #FFF;
+    font-family: Merriweather;
+    font-size: 30px;
+    font-weight: 900;
+    /* line-height: 88px; 
+    margin-bottom: 20px;
+}
+
+.wellcome-description {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+}
+
+/* schedule area style  
+.schedule-container {
+    background-image: linear-gradient(to bottom right, #FFEAEA, rgba(255, 0, 0, 0));
+    border-radius: 16px;
+
+}
+
+.schedule-top {
+    text-align: center;
+    /* padding: 70px 100px 0px; 
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 600;
+}
+
+.red {
+    color: red;
+    font-size: 32px;
+}
+
+.schedule-bottom {
+    text-align: center;
+}
+
+.schedule-bottom>.btn-primary {
+    /* padding: 13px 25px; 
+    background-color: red;
+    margin-top: 30px;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+}
+
+.schedule-item {
+    padding: 100px 150px;
+    margin-bottom: 100px;
+}
+
+/* coming-soon-style 
+.coming-soon-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+
+.coming-soon-subtitle {
+    color: #F00;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.coming-soon-title {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+
+}
+
+.coming-soon-description {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.img {
+    outline: 10px solid red;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.coming-soon-colum1 {
+    padding: 20px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.title {
+    color: #F00;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.mar-btm {
+    margin-top: 20px;
+}
+
+/* holiday style  
+.holiday-subtitle {
+    color: #070211;
+    font-family: Inter;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.holiday-title {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 72px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#red {
+    color: red;
+    font-size: 72px;
+}
+
+.holiday-description {
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px
+}
+
+.holiday-images {
+    display: flex;
+    justify-content: center;
+    /* max-width: 300px; 
+    margin-top: 30px;
+    background-image: url('resources/ractengle-2.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 50px;
+    border-radius: 16px;
+
+
+
+}
+
+.img-left img {
+    width: 552px;
+}
+
+.img-right img {
+    width: 350px;
+}
+
+.img-left {
+    background-image: url('resources/Group-44.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+
+
+}
+
+/* portfolio style  
+.portfolio-container {
+    margin-bottom: 100px;
+}
+
+.portfolio-subtitle {
+    color: #F00;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+
+.portfolio-title {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.portfolio-description {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 800px;
+    /* 160% 
+}
+
+.portfolio-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px 15px;
+}
+
+.img-colum .width {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* subscriber style  
+.subscribe-container{
+    margin-bottom: 100px;
+}
+.subscribe-item {
+    text-align: center;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+    padding: 60px 100px;
+}
+.subscribe-title {
+    color: #070211;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 20px 0px 15px;
+}
+
+.subscribe-description {
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 25px;
+
+}
+
+.input-btn {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="email"] {
+    padding: 20px 150px 20px 25px;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+    color: rgba(7, 2, 17, 0.30);
+    text-align: left;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.input-right button {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    padding: 20px 50px 20px;
+    overflow: none;
+}
+
+
+/* footer style  
+.footer-container {
+    background-color: #070211;
+}
+
+.footer-head {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.foot-left {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.foot-right {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+}
+
+hr {
+    background: rgba(255, 255, 255, 0.15);
+    height: 2px;
+    margin: 0px 30px 0px;
+}
+
+.footer-body {
+    padding: 40px 0px 40px;
+    text-align: center;
+}
+
+.footer-body img {
+    margin-right: 10px;
+}
+
+.footer-foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 120px 90px;
+}
+
+.f-left, .f-right {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+.number, .website{
+    position: relative;
+}
+.align-center{
+    position: absolute;
+  left: -30px;
+}
